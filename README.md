@@ -43,9 +43,8 @@ Jain公平度は `(Σx)² / (n × Σx²)` で計算します。起動エネル�
 ```text
 mec-offloading-research/
 ├── README.md
-├── LICENSE                       # 元プロジェクトのライセンス
+├── LICENSE                       # ライセンス
 ├── requirements.txt              # 実験・解析用ライブラリ
-├── SOURCE_MANIFEST.json          # コピー元、ハッシュ、変更内容
 ├── mecoptimaloffloading/
 │   ├── env_multi_mec.py          # 環境・システム設定・乱数生成
 │   ├── ga_multi_mec_energy.py    # GA操作と基本評価
@@ -66,11 +65,10 @@ mec-offloading-research/
 │   └── analyze01_English.ipynb  # 1.0 J条件・英語図
 ├── data/reference/              # 卒研時の基準CSV6個
 ├── figures/                     # 採用する図の保存先
-└── outputs/                     # 新規実験・解析の生成物（Git管理外）
+└── outputs/                     # 新規実験・解析の生成物
 ```
 
-共通処理の3ファイルは内容を変更せずコピーしました。元の `test_multicore_algorithms_compare5.py` は、実験コードとして `experiments/compare.py` に配置しました。
-元の `5.py`・`5-2.py`・`5-3.py` の違いは起動エネルギーと出力名のみだったため、その違いを3個のJSON設定へ移しています。各手法の関数は元のままです。
+比較実験の処理は `experiments/compare.py` に、実験条件は3個のJSON設定に分けています。
 `__init__.py` はPythonパッケージとして読み込むためのファイルです。
 
 ## 実験条件
@@ -169,29 +167,12 @@ Greedyの初期解とRandomの割当は、元の実験呼び出しでseedを渡�
 
 ## 整理時の確認
 
-- コピー元の記録についてSHA-256を照合し、元ファイルが変更されていないことを確認しました。
-- 共通コード3個・基準CSV6個・LICENSEはコピー元とバイト単位で一致しています。
-- 実験コードの各手法・集計関数は、元コードとPython構文木で一致しています。設定読込と出力先を変更した `main` はこの比較の対象外です。
 - 3条件の小規模実験を実行し、それぞれ集計4行・ユーザ別32行のCSV出力を確認しました。
-- 検証時だけGreedy・Randomの乱数を揃え、元コードと整理後のコードを小規模実行しました。3条件・4手法のCSVは、計算時間を除いて一致しました（通常実行の乱数処理は変更していません）。
+- 検証時だけGreedy・Randomの乱数を揃え、3条件・4手法のCSV出力を確認しました。
 - 4冊のノートブックのコードセルを順に実行し、基準CSVからの図表生成を確認しました。確認時は非対話描画を使用しています。
 - 基準データの行数・キーの一意性、および実験出力の上書き防止を確認しました。
 
 確認環境：Python 3.10.13、NumPy 2.2.6、DEAP 1.4.3、pandas 2.3.3、Matplotlib 3.10.9、seaborn 0.13.2。
 100シナリオ・300世代の通常実験と、過去の基準CSVとの数値一致は未検証です。
 
-## コピー元とGit管理
-
-- 共通コード・実験・CSV：`B4勝見/研究データ/`。
-- 解析ノートブック・ライセンス：`MECOptimalOffloading-maste1-rega/`。
-- 詳細なコピー元、元ファイルのSHA-256、整理時の変更：[SOURCE_MANIFEST.json](SOURCE_MANIFEST.json)。パスは元の「研究」フォルダを基準としています。
-
-コード、設定、基準CSV、出力を除いたノートブック、ドキュメントをGit管理対象とします。
-`.venv/`、キャッシュ、`outputs/` の生成物、OS管理ファイルは `.gitignore` で除外しています。
-代表図は生成元が分かるものを選んで `figures/` に保存します。
-
-## 元プロジェクト
-
-元のコード群は Gagandeep Singh による `czgdp1807/MECOptimalOffloading` を基にした研究用フォルダから抽出しています。
-元プロジェクトのBSD 3-Clause Licenseと著作権表示は [LICENSE](LICENSE) に保存しています。元プロジェクトのDOIは `10.5281/zenodo.4036587` です。
-元の二分探索・局所探索等の全実装は、この整理版の実験対象には含めていません。
+ライセンスと利用条件は [LICENSE](LICENSE) を確認してください。
