@@ -1,0 +1,116 @@
+[
+  {
+    "source": "B4勝見/研究データ/プログラム/mecoptimaloffloading/env_multi_mec.py",
+    "destination": "mecoptimaloffloading/env_multi_mec.py",
+    "source_sha256": "cb7bf6b5fedc0ee4e5e0a9d1fefaf712acb8ae42b7852198771fab6fbb6820f6",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/プログラム/mecoptimaloffloading/ga_multi_mec_energy.py",
+    "destination": "mecoptimaloffloading/ga_multi_mec_energy.py",
+    "source_sha256": "535a94fd66405c826fddcfe593c617c6fc2b9323b97cb0f9df132b946d43ff1a",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/プログラム/mecoptimaloffloading/multicore_scheduler.py",
+    "destination": "mecoptimaloffloading/multicore_scheduler.py",
+    "source_sha256": "95bb4f9e36ab59f2c40b56a786d9d672c30e85345699e38a8f7f15edd2f9ff30",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/結果/results_compare_all_no_capacity1.csv",
+    "destination": "data/reference/results_compare_all_no_capacity1.csv",
+    "source_sha256": "3b35935236e1231387a053217294f51a002ed0d057d9089c308acb24b4995c9e",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/結果/results_compare_all_no_capacity3.csv",
+    "destination": "data/reference/results_compare_all_no_capacity3.csv",
+    "source_sha256": "ac41aa5586d08ef2f04aaf1b8eeacda2960fde716ff77cfd507b36356c0440f8",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/結果/results_compare_all_no_capacity2.csv",
+    "destination": "data/reference/results_compare_all_no_capacity2.csv",
+    "source_sha256": "a42c7f43146c3e1ee8804f3883a0b28b77b93d6afc27758d649bd2fc2e30783f",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/結果/results_per_user_long_no_capacity3.csv",
+    "destination": "data/reference/results_per_user_long_no_capacity3.csv",
+    "source_sha256": "6a5f7554b3d04a96ea13d03fa73ef55ee545f202863ca74bfbef7c5c7da7c96f",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/結果/results_per_user_long_no_capacity2.csv",
+    "destination": "data/reference/results_per_user_long_no_capacity2.csv",
+    "source_sha256": "0fa285c3164ea3b93322eb044642391e14946c03b6ea40df5d93b1226e1480dc",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/結果/results_per_user_long_no_capacity1.csv",
+    "destination": "data/reference/results_per_user_long_no_capacity1.csv",
+    "source_sha256": "0cded240efbff890e66bc9fb0f089a6d7ee087e02fce8c6c0f443c929cf56798",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "MECOptimalOffloading-maste1-rega/LICENSE",
+    "destination": "LICENSE",
+    "source_sha256": "a770b05179439996b312969e31d53a08425af6ce3c9c90c462eb8c0c0ed05ddb",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "B4勝見/研究データ/プログラム/mecoptimaloffloading/tests/test_multicore_algorithms_compare5.py",
+    "destination": "experiments/compare.py",
+    "source_sha256": "f5be1d0e1862504152a226150da606494efaa632f808650f473840287dc9e51c",
+    "change": "Parameterize main and CSV output paths; algorithm functions unchanged"
+  },
+  {
+    "source": "B4勝見/研究データ/プログラム/mecoptimaloffloading/tests/test_multicore_algorithms_compare5.py",
+    "destination": "configs/boot_1.0.json",
+    "source_sha256": "f5be1d0e1862504152a226150da606494efaa632f808650f473840287dc9e51c",
+    "change": "Extract original main settings; other system defaults remain in env_multi_mec.py"
+  },
+  {
+    "source": "B4勝見/研究データ/プログラム/mecoptimaloffloading/tests/test_multicore_algorithms_compare5-2.py",
+    "destination": "configs/boot_0.5.json",
+    "source_sha256": "9580f44f82601c295637e80596fad838f6db5cf836ec7ed335aedad5ed88bb05",
+    "change": "Extract original main settings; other system defaults remain in env_multi_mec.py"
+  },
+  {
+    "source": "B4勝見/研究データ/プログラム/mecoptimaloffloading/tests/test_multicore_algorithms_compare5-3.py",
+    "destination": "configs/boot_1.5.json",
+    "source_sha256": "ae1021c9752f379d3992d72400a6e413f5cb4cbfeb9cbec0d965cfd4511ec9b8",
+    "change": "Extract original main settings; other system defaults remain in env_multi_mec.py"
+  },
+  {
+    "source": "MECOptimalOffloading-maste1-rega/analyze01.ipynb",
+    "destination": "analysis/analyze01.ipynb",
+    "source_sha256": "5c39ee9490f285be879cf41524e2c4b800b75601ce3471145eb28019346b01a2",
+    "change": "Refactored into a short settings/execution notebook using analysis/reporting.py. CSVs read once; duplicate excess plots removed; alternative views optional; summaries shared with ddof=0; tables exported as CSV/standard LaTeX. See analysis/README.md."
+  },
+  {
+    "source": "MECOptimalOffloading-maste1-rega/analyze02.ipynb",
+    "destination": "analysis/analyze02.ipynb",
+    "source_sha256": "f691cb7d8dbbfbc235650cec13e17d24b150a353c1529832f5c9f896985c09d7",
+    "change": "Refactored into a short settings/execution notebook using analysis/reporting.py. CSVs read once; duplicate excess plots removed; alternative views optional; summaries shared with ddof=0; tables exported as CSV/standard LaTeX. See analysis/README.md."
+  },
+  {
+    "source": "MECOptimalOffloading-maste1-rega/analyze03.ipynb",
+    "destination": "analysis/analyze03.ipynb",
+    "source_sha256": "3a6a39d00495b8fdd0d4cde88c3c43fd60c118824d16e0231742191733212e98",
+    "change": "Refactored into a short settings/execution notebook using analysis/reporting.py. CSVs read once; duplicate excess plots removed; alternative views optional; summaries shared with ddof=0; tables exported as CSV/standard LaTeX. See analysis/README.md."
+  },
+  {
+    "source": "MECOptimalOffloading-maste1-rega/analyze01_English.ipynb",
+    "destination": "analysis/analyze01_English.ipynb",
+    "source_sha256": "0ef6a1966c614317371e94082007cc5fb83b74cd78bfa5ec2edde92138f07c32",
+    "change": "Refactored into a short settings/execution notebook using analysis/reporting.py. CSVs read once; duplicate excess plots removed; alternative views optional; summaries shared with ddof=0; tables exported as CSV/standard LaTeX. See analysis/README.md."
+  },
+  {
+    "source": "MECOptimalOffloading-maste1-rega/analyze01.ipynb",
+    "destination": "analysis/reporting.py",
+    "source_sha256": "5c39ee9490f285be879cf41524e2c4b800b75601ce3471145eb28019346b01a2",
+    "change": "Shared rewrite of loading, plotting and table aggregation from the four original notebooks; see analysis/README.md."
+  }
+]

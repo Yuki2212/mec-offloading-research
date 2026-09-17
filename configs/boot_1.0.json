@@ -1,0 +1,24 @@
+{
+  "condition_id": 1,
+  "system": {
+    "num_users": 100,
+    "num_mecs": 8,
+    "e_mec_boot": 1.0
+  },
+  "multicore": {
+    "cores_per_mec": 4,
+    "alpha_parallel": 0.9
+  },
+  "ga": {
+    "pop_size": 200,
+    "generations": 300,
+    "p_crossover": 0.9,
+    "p_mutation": 0.08,
+    "tournament_k": 3,
+    "elitism": 2,
+    "seed": 1,
+    "beta_task_e": 0.5,
+    "balance": 0.0
+  },
+  "num_scenarios": 100
+}

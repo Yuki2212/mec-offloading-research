@@ -1,0 +1,7 @@
+# Experiment and analysis dependencies. Historical versions were not recorded.
+numpy>=1.24,<3
+deap>=1.4,<2
+pandas>=2,<3
+matplotlib>=3.8,<4
+seaborn>=0.13,<0.14
+jupyterlab>=4,<5
